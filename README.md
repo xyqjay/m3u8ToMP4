@@ -1,4 +1,5 @@
 # m3u8ToMP4
+![Swift 5.1](https://img.shields.io/badge/Swift-5.1-orange.svg)
 [GitHub地址](https://github.com/xyqjay/m3u8ToMP4)
 
 * ~~这个Demo暂时~~ DEMO里第一个Controller是简单的使用AVFoundation.FrameWork拼接视频

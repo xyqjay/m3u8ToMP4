@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PlayerViewToolBar" customModule="m3u8ToMp4" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gJ2-cX-yNj" userLabel="底部bar">
+                    <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tfg-7g-dZz">
+                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="Nqw-H8-i6h"/>
+                            </constraints>
+                            <state key="normal" title="播放"/>
+                            <connections>
+                                <action selector="onClickPlayPauseButton" destination="iN0-l3-epB" eventType="touchUpInside" id="mMV-na-9ne"/>
+                            </connections>
+                        </button>
+                        <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="VTg-IK-6Gb">
+                            <rect key="frame" x="58" y="0.0" width="179" height="51"/>
+                        </slider>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M0K-k1-m9f">
+                            <rect key="frame" x="325" y="0.0" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="Evy-e1-h6D"/>
+                            </constraints>
+                            <state key="normal" title="全屏"/>
+                            <connections>
+                                <action selector="onClickFullSmallButton" destination="iN0-l3-epB" eventType="touchUpInside" id="CxZ-a2-7xR"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="时间" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MXE-cJ-Khr">
+                            <rect key="frame" x="245" y="0.0" width="80" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="HJJ-Pj-3dz"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="Tfg-7g-dZz" firstAttribute="top" secondItem="gJ2-cX-yNj" secondAttribute="top" id="1Qp-yJ-LvL"/>
+                        <constraint firstAttribute="height" constant="50" id="1gu-ni-oM9"/>
+                        <constraint firstItem="VTg-IK-6Gb" firstAttribute="leading" secondItem="Tfg-7g-dZz" secondAttribute="trailing" constant="10" id="9JC-jl-6ml"/>
+                        <constraint firstItem="M0K-k1-m9f" firstAttribute="leading" secondItem="MXE-cJ-Khr" secondAttribute="trailing" id="9ax-SQ-TZP"/>
+                        <constraint firstItem="MXE-cJ-Khr" firstAttribute="top" secondItem="gJ2-cX-yNj" secondAttribute="top" id="AQF-eV-99L"/>
+                        <constraint firstAttribute="bottom" secondItem="MXE-cJ-Khr" secondAttribute="bottom" id="GpZ-Zm-bwg"/>
+                        <constraint firstAttribute="trailing" secondItem="M0K-k1-m9f" secondAttribute="trailing" id="LDh-Oi-tjI"/>
+                        <constraint firstItem="VTg-IK-6Gb" firstAttribute="top" secondItem="gJ2-cX-yNj" secondAttribute="top" id="TaX-on-wKE"/>
+                        <constraint firstAttribute="bottom" secondItem="M0K-k1-m9f" secondAttribute="bottom" id="TyH-bV-VAL"/>
+                        <constraint firstItem="Tfg-7g-dZz" firstAttribute="leading" secondItem="gJ2-cX-yNj" secondAttribute="leading" id="d5K-7p-rKi"/>
+                        <constraint firstItem="M0K-k1-m9f" firstAttribute="top" secondItem="gJ2-cX-yNj" secondAttribute="top" id="iBM-c8-Xpx"/>
+                        <constraint firstAttribute="bottom" secondItem="Tfg-7g-dZz" secondAttribute="bottom" id="mhb-Dj-50I"/>
+                        <constraint firstAttribute="bottom" secondItem="VTg-IK-6Gb" secondAttribute="bottom" id="qpI-ah-0gG"/>
+                        <constraint firstItem="MXE-cJ-Khr" firstAttribute="leading" secondItem="VTg-IK-6Gb" secondAttribute="trailing" constant="10" id="vve-oW-TYV"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="gJ2-cX-yNj" secondAttribute="trailing" id="7sg-vT-omf"/>
+                <constraint firstAttribute="bottom" secondItem="gJ2-cX-yNj" secondAttribute="bottom" id="Lr5-k6-798"/>
+                <constraint firstItem="gJ2-cX-yNj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="xyG-Do-uUM"/>
+            </constraints>
+            <connections>
+                <outlet property="bottomBar" destination="gJ2-cX-yNj" id="rUu-vR-Yz2"/>
+                <outlet property="fullSmallButton" destination="M0K-k1-m9f" id="quK-II-J70"/>
+                <outlet property="playPauseButton" destination="Tfg-7g-dZz" id="axs-0o-nNT"/>
+                <outlet property="slider" destination="VTg-IK-6Gb" id="ukx-eP-mGe"/>
+                <outlet property="timeTabel" destination="MXE-cJ-Khr" id="AUk-H4-BfU"/>
+                <outletCollection property="gestureRecognizers" destination="g7V-iJ-1zr" appends="YES" id="znL-z4-9Wh"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="52"/>
+        </view>
+        <tapGestureRecognizer id="g7V-iJ-1zr">
+            <connections>
+                <action selector="taped" destination="iN0-l3-epB" id="Gbw-YH-DA7"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+</document>

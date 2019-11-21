@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>cats</key>
+	<string>纪录片</string>
+	<key>channel_pic</key>
+	<string>http://u1.tdimg.com/2/166/61/_127798930480474511784705647316792849352.jpg</string>
+	<key>channel_pic_220_220</key>
+	<string>http://u1.tdimg.com/4/19/204/156951802481494672895777191845119226444.jpg</string>
+	<key>cid</key>
+	<integer>28</integer>
+	<key>desc</key>
+	<string>Cosmos.A.SpaceTime.Odyssey.E02.720p.BluRay.x264.AAC-iHD</string>
+	<key>duration</key>
+	<real>2715</real>
+	<key>exclusive_logo</key>
+	<integer>0</integer>
+	<key>format_flag</key>
+	<integer>7</integer>
+	<key>iid</key>
+	<string>P7FDCSoBevQ</string>
+	<key>img</key>
+	<string>http://g1.tdimg.com/94fecd7aa40fb77ce0aab1b1ee840aff/p_2.jpg</string>
+	<key>img_hd</key>
+	<string>http://g1.tdimg.com/94fecd7aa40fb77ce0aab1b1ee840aff/w_2.jpg</string>
+	<key>isVuser</key>
+	<false/>
+	<key>item_id</key>
+	<string>230052004</string>
+	<key>item_media_type</key>
+	<string>视频</string>
+	<key>limit</key>
+	<integer>0</integer>
+	<key>play_url</key>
+	<string>http://www.tudou.com/programs/view/P7FDCSoBevQ/</string>
+	<key>plid</key>
+	<string>3PSPjRMccHc</string>
+	<key>stripe_bottom</key>
+	<string>45:15</string>
+	<key>subed_num</key>
+	<integer>166</integer>
+	<key>title</key>
+	<string>宇宙：时空之旅（第二集）</string>
+	<key>total_comment</key>
+	<integer>6</integer>
+	<key>total_fav</key>
+	<integer>0</integer>
+	<key>total_vv</key>
+	<string>7192</string>
+	<key>type</key>
+	<string>item</string>
+	<key>user_desc</key>
+	<string></string>
+	<key>user_play_times</key>
+	<string>14.6万</string>
+	<key>userid</key>
+	<integer>79211123</integer>
+	<key>username</key>
+	<string>lee_yo</string>
+</dict>
+</plist>
